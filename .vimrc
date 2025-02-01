@@ -1,9 +1,12 @@
 :set number
-:set relativenumber
 :set tabstop=4
 :set shiftwidth=4
 :set smartindent
 :set cindent
+:set cursorline
+
+:highlight CursorLine cterm=NONE
+:highlight CursorLineNr cterm=NONE ctermfg=red ctermbg=yellow
 
 :inoremap kj			<Esc>
 :vnoremap kj			<Esc>
