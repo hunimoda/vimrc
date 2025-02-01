@@ -1,4 +1,5 @@
 :set number
+:set scrolloff=10
 :set tabstop=4
 :set shiftwidth=4
 :set smartindent
