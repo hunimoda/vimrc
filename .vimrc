@@ -3,6 +3,7 @@
 :set tabstop=4
 :set shiftwidth=4
 :set smartindent
+:set cindent
 
 :inoremap kj			<Esc>
 :vnoremap kj			<Esc>
@@ -13,9 +14,7 @@
 :inoremap <expr> ( 		"()<Left>"
 :inoremap <expr> { 		"{}<Left>"
 :inoremap <expr> [ 		"[]<Left>"
-:inoremap <expr> < 		"<><Left>"
 :inoremap <expr> )		getline('.')[col('.') - 1] == ')' ? "\<Right>" : ")"
 :inoremap <expr> } 		getline('.')[col('.') - 1] == '}' ? "\<Right>" : "}"
 :inoremap <expr> ] 		getline('.')[col('.') - 1] == ']' ? "\<Right>" : "]"
-:inoremap <expr> > 		getline('.')[col('.') - 1] == '>' ? "\<Right>" : ">"
-:inoremap <expr> <CR>	getline('.')[col('.') - 1] =~ "['\"\\)}\\]>]" ? "\<CR>\<BS>\<Esc>O" : "\<CR>"
+:inoremap <expr> <CR>	getline('.')[col('.') - 1] =~ "['\"\\)}\\]>]" ? "\<CR>\<Esc>O" : "\<CR>"
